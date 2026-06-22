@@ -99,213 +99,229 @@ footer { padding: 32px 0; text-align: center; font-size: 0.82rem; color: var(--t
 <nav>
   <div class="nav-logo">📊 圆汇众 · 白话日报</div>
   <div class="nav-links">
-    <a href="#conclusion">一句话</a>
+    <a href="#conclusion">结论</a>
     <a href="#tencent">腾讯</a>
     <a href="#nasdaq">纳指</a>
-    <a href="#action">行动</a>
+    <a href="#action">建议</a>
+    <a href="#archive">往期</a>
   </div>
 </nav>
 
-<header class="hero">
-  <div class="kicker">📊 腾讯 + 纳斯达克 · 今日速报</div>
-  <h1>2026年6月22日<br>腾讯又跌了，钱跑去买AI芯片股；<br>美股那边却在狂欢</h1>
-  <p class="hero-dek">小白也能看懂的当日股市快报。每天中午，用大白话告诉你今天发生了什么、该注意什么。</p>
-  <div class="host">🐼 主理人：圆汇众 · 腾讯自选股投研专家团</div>
-</header>
+<div class="hero">
+  <div class="kicker">2026-06-22 · 周一 · 第5期</div>
+  <h1>📊 腾讯 + 纳斯达克 · 今日速报 · 2026-06-22</h1>
+  <p class="hero-dek">小白也能看懂的当日股市快报。今天腾讯继续跌，纳指上周五大涨——冰火两重天。</p>
+  <div class="host">🤝 主理人：圆汇众 · 数据截至 2026-06-22 盘中 & 美东 6/19 收盘</div>
+</div>
 
-<!-- Section 1: 一句话结论 -->
-<section id="conclusion">
-  <div class="container">
-    <div class="conclusion-card">
-      <div class="conclusion-emoji">😟 / 😊</div>
-      <div class="conclusion-text">腾讯今天又跌了 1.5%，收 433.6 港元——连着跌了 5 天了，该警惕。但美股那边相反：上周五（6/18）纳指大涨近 2%，芯片股集体狂欢。</div>
-      <div class="conclusion-sub">一句话总结：今天是"东边日出西边雨"。内地的钱（南向资金）正在抛腾讯、阿里这些老牌互联网股，转头去买 AI 芯片新股（比如智谱今天暴涨超 30%）。腾讯被"抽血"了，不是公司出了大问题，是资金一时间不爱它了。别慌，但也别急着抄底。</div>
+<div class="container">
+
+<!-- ===== 1. 一句话结论 ===== -->
+<section id="conclusion" style="padding-top: 0;">
+  <div class="conclusion-card">
+    <div class="conclusion-emoji">😟 😊</div>
+    <div class="conclusion-text">
+      腾讯今天又跌了，436.2 港元，一周从 460 跌到 436，钱在往外跑；纳指上周五倒是大涨近 2%，芯片股集体狂欢。一个哭一个笑。
+    </div>
+    <div class="conclusion-sub">
+      简单说：腾讯短期内偏弱，资金在卖、趋势在跌，但公司自己天天在回购（掏钱买自家股票）；纳指短期很强，但美联储新主席放了"狠话"说可能还要加息，后面有不确定性。整体不用慌，但腾讯短期内别急着加仓。
     </div>
   </div>
 </section>
 
-<!-- Section 2: 关键数据卡片 -->
-<section>
-  <div class="container">
-    <div class="section-head">
-      <div class="section-num">01</div>
-      <div>
-        <div class="section-title">关键数据</div>
-        <div class="section-lede">一眼看完今天最重要的数字</div>
-      </div>
+<!-- ===== 2. 关键数据卡片 ===== -->
+<section id="data" style="padding-top: 24px;">
+  <div class="section-head">
+    <div class="section-num">02 / DATA</div>
+    <div>
+      <div class="section-title">📊 关键数据卡片</div>
+      <div class="section-lede">6 个核心指标，一眼看完今天该知道的</div>
     </div>
-    <div class="data-grid">
-      <div class="data-card">
-        <div class="data-label">腾讯控股 今日</div>
-        <div class="data-value green">433.6 港元</div>
-        <div class="data-change green">▼ 6.6（−1.5%）</div>
-        <div class="data-note">开 439 → 盘中最低 428.4</div>
-      </div>
-      <div class="data-card">
-        <div class="data-label">距圆桌报告价 460.8</div>
-        <div class="data-value green">−27.2 港元</div>
-        <div class="data-change green">已跌去 5.9%</div>
-        <div class="data-note">6月9日圆桌报告时的价格</div>
-      </div>
-      <div class="data-card">
-        <div class="data-label">纳斯达克指数</div>
-        <div class="data-value red">26,518</div>
-        <div class="data-change red">▲ 496（+1.91%）</div>
-        <div class="data-note">6月18日美股收盘（19日休市）</div>
-      </div>
-      <div class="data-card">
-        <div class="data-label">美债10年收益率</div>
-        <div class="data-value" style="color:var(--text-primary);">4.49%</div>
-        <div class="data-change" style="color:var(--text-muted);">基本没动（持平）</div>
-        <div class="data-note">"借钱给美国政府10年的利息"</div>
-      </div>
-      <div class="data-card">
-        <div class="data-label">主力资金（大机构）</div>
-        <div class="data-value green" style="font-size:1.3rem;">净流出 2.1 亿</div>
-        <div class="data-change green">散户也跑，合计流出 7.4 亿</div>
-        <div class="data-note">大钱小钱今天都在卖</div>
-      </div>
-      <div class="data-card">
-        <div class="data-label">今日热点</div>
-        <div class="data-value" style="font-size:1.05rem;">🔄 内地资金大换仓</div>
-        <div class="data-change">抛腾讯阿里，抢 AI 芯片股</div>
-        <div class="data-note">智谱今天暴涨超 30%，市值破万亿</div>
-      </div>
+  </div>
+
+  <div class="data-grid">
+    <div class="data-card">
+      <div class="data-label">腾讯今日价</div>
+      <div class="data-value">436.2 <span style="font-size:0.9rem;color:var(--text-muted)">港元</span></div>
+      <div class="data-change green">▼ 跌 4.0 港元（-0.91%）</div>
+      <div class="data-note">今日盘中最低 431 港元</div>
+    </div>
+
+    <div class="data-card">
+      <div class="data-label">距圆桌报告基准价</div>
+      <div class="data-value">-24.6 <span style="font-size:0.9rem;color:var(--text-muted)">港元</span></div>
+      <div class="data-change green">▼ 偏离 -5.34%</div>
+      <div class="data-note">6/9 报告基准价 460.8 港元</div>
+    </div>
+
+    <div class="data-card">
+      <div class="data-label">纳指最新点位</div>
+      <div class="data-value">26,518</div>
+      <div class="data-change red">▲ 涨 496 点（+1.91%）</div>
+      <div class="data-note">美东 6/19 收盘 · 周五休市</div>
+    </div>
+
+    <div class="data-card">
+      <div class="data-label">美债 10 年收益率</div>
+      <div class="data-value">4.45%</div>
+      <div class="data-change green">▼ 跌 0.03 个百分点</div>
+      <div class="data-note">"借钱给美国政府的利息" · 跌了说明债市觉得经济可能降温</div>
+    </div>
+
+    <div class="data-card">
+      <div class="data-label">南向资金（内地来港的钱）</div>
+      <div class="data-value green">-16.0 <span style="font-size:0.9rem;color:var(--text-muted)">亿港元</span></div>
+      <div class="data-change">净流出（钱跑了）</div>
+      <div class="data-note">卖了 366 万股腾讯 · 持股比例 11.71%</div>
+    </div>
+
+    <div class="data-card">
+      <div class="data-label">今日新闻热点</div>
+      <div class="data-value" style="font-size:1.05rem;line-height:1.5">🇺🇸 芯片股大爆发<br>费城半导体涨 6.4%</div>
+      <div class="data-change red">英特尔 +10% · 闪迪 +11%</div>
+      <div class="data-note">英伟达 +3% · 台积电 +7%</div>
     </div>
   </div>
 </section>
 
-<!-- Section 3: 腾讯今天发生了什么 -->
+<!-- ===== 3. 腾讯今天发生了什么 ===== -->
 <section id="tencent">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-num">02</div>
-      <div>
-        <div class="section-title">腾讯今天发生了什么</div>
-        <div class="section-lede">用妈妈也能看懂的方式讲</div>
-      </div>
+  <div class="section-head">
+    <div class="section-num">03 / TENCENT</div>
+    <div>
+      <div class="section-title">腾讯今天发生了什么</div>
+      <div class="section-lede">hk00700 · 2026-06-22 盘中数据</div>
     </div>
-    <div class="prose">
-      <p><strong>价格走势：</strong>腾讯今天开盘 439 港元，然后一路往下走，盘中最低跌到 428.4，最后收在 433.6，跌了 1.5%。这已经是连续第 5 天下跌了——从上周一（6/15）的 459.6 一路滑到现在的 433.6，10 天里跌了约 4.3%。简单说：现在是"跌跌不休"的状态，没看到止跌的迹象。</p>
+  </div>
 
-      <p><strong>钱进来了还是跑了？</strong>今天大机构（主力）净卖出约 2.1 亿港元，散户也在卖，合计跑掉了 7.4 亿。更关键的是<strong>南向资金</strong>（就是内地人通过港股通买香港股票的钱）——今天减持了 365.6 万股腾讯，金额上净流出约 16 亿港元。翻译成人话：内地的钱不光不买腾讯了，还在大笔往外撤。</p>
+  <div class="prose">
+    <p><strong>📉 价格走势：</strong>今天开盘 439 港元，盘中最低探到 431 港元，最终在 436.2 港元附近。从上周一（6/15）的 460 港元算起，<strong>一周跌了约 5%</strong>。年至今已经跌了 26.5%，52 周最高点 677.7 港元现在看像是上辈子的事了。</p>
 
-      <p><strong>为什么跑？</strong>不是腾讯出了大事，是<strong>钱去追更热的东西了</strong>。这几天 A 股和港股的 AI、芯片股特别火，今天港股的智谱（一家 AI 公司）暴涨超 30%、市值突破万亿。资金有限，要买新欢就得卖旧爱，腾讯、阿里这些"老牌互联网"就成了被抛售的对象。</p>
+    <p><strong>💰 资金面——钱在往外跑：</strong>今天主力（大机构）净卖了 3220 万港元，散户净卖了 3.38 亿港元，合计净流出 3.7 亿。<strong>最关键的是南向资金（就是内地通过港股通来买港股的钱）净流出了 16 亿港元</strong>，卖掉了 366 万股腾讯。翻译成大白话：<strong>内地来的大资金在撤退</strong>。不过南向整体还持有 10.67 亿股腾讯，占比 11.71%，底仓还在。</p>
 
-      <p><strong>关键价位提醒：</strong>上次圆桌报告时腾讯 460.8，现在 433.6，已经跌去 5.9%。<strong>跌破 428（今天最低）</strong>要继续警惕，再往下看 52 周低点 420.4；<strong>要重新站上 445</strong> 才算企稳的第一个信号。目前短线指标（MACD，可理解成"涨跌劲头的温度计"）还是绿的、偏弱，说明下跌的劲头还没消，<strong>别急着抄底接刀</strong>。</p>
-    </div>
+    <p><strong>🔧 技术信号——趋势偏空：</strong>MACD 的三条线都是负的（DIF -4.78，DEA -4.24，柱 -1.08），翻译成人话就是"短期卖压大于买力，趋势往下"。<strong>但 MACD 柱没有继续扩大</strong>，说明跌势可能接近尾声，不一定会加速崩。</p>
+
+    <p><strong>🏠 公司自己很努力：</strong>6/18 腾讯又花了 5.01 亿港元回购 114.4 万股，<strong>已经连续 22 个交易日回购</strong>。5/18 恢复回购以来累计买了 102 亿港元，年内累计回购超 204 亿。管理层在用实际行动说"我们觉得股价被低估了"。</p>
+
+    <p><strong>⚡ 关键价位提醒：</strong>（和 6/9 圆桌报告呼应）<br>
+    • <strong>下方支撑</strong>：420.4 港元是 52 周最低点，今天最低 431 已经离它不远了。如果跌破 420，要警惕加速下跌。<br>
+    • <strong>上方压力</strong>：450 港元是近期的一个重要关口，站上去才算企稳。<br>
+    • <strong>乐观信号</strong>：如果连续两天站上 445，可能意味着这一波调整差不多了。</p>
   </div>
 </section>
 
-<!-- Section 4: 纳斯达克今天发生了什么 -->
+<!-- ===== 4. 纳斯达克今天发生了什么 ===== -->
 <section id="nasdaq">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-num">03</div>
-      <div>
-        <div class="section-title">纳斯达克今天发生了什么</div>
-        <div class="section-lede">美股那边在过节，但股市先涨了一波</div>
-      </div>
+  <div class="section-head">
+    <div class="section-num">04 / NASDAQ</div>
+    <div>
+      <div class="section-title">纳斯达克今天发生了什么</div>
+      <div class="section-lede">us.IXIC · 美东 6/19（周五）收盘 · 6/19 为美国假日休市</div>
     </div>
-    <div class="prose">
-      <p><strong>美股最近收盘：</strong>上周五（6/19）美国过"六月节"休市，最新一个交易日是 6/18，纳斯达克大涨 1.91%、收在 26,518 点，一天涨了将近 500 点！标普 500 涨 1.08%，道指微涨。一句话：<strong>美股科技股那晚很嗨</strong>。</p>
+  </div>
 
-      <p><strong>大事件——芯片股集体狂欢：</strong>那晚最火的是半导体（做芯片的公司）。英特尔暴涨 10.6% 创历史新高，台积电涨近 7%，英伟达涨约 3%，美光涨近 9%，费城半导体指数一天涨 6.42%。导火索是<strong>苹果宣布和英特尔合作</strong>，市场又开始相信"AI 要花大钱建基础设施"的故事，钱就涌进了芯片股。</p>
+  <div class="prose">
+    <p><strong>📈 美股周五大涨：</strong>上周五（6/19）是美国 Juneteenth 假日，美股休市，所以最新数据是周四（6/18）收盘的。纳指收在 26,518 点，涨了 496 点（+1.91%），<strong>一举收复了周三美联储"吓人"发言后的跌幅</strong>。</p>
 
-      <p><strong>另一件要记住的事：</strong>美联储（管美国利率的机构）开完会决定<strong>利率不变</strong>，但暗示今年还可能加息（18 位官员里 9 位觉得要加），态度偏"鹰派"（就是更想收紧、对股市不太友好的意思）。好在中东那边美伊达成谅解、油轮恢复通行，油价压力缓解，市场就没太当回事。</p>
+    <p><strong>🔥 芯片股是最大功臣：</strong>费城半导体指数大涨 6.42%，创历史新高！英特尔涨超 10%，闪迪涨 11%，台积电涨近 7%，英伟达涨近 3%。<strong>翻译成人话：全世界都在抢 AI 芯片，做芯片的公司赚翻了。</strong></p>
 
-      <p><strong>对腾讯/A股的连带影响：</strong>美股涨，理论上对港股是好事，但今天港股偏偏没跟上——因为港股自己在"内部换仓"（钱从互联网股流向 AI 芯片股），腾讯没沾到美股的光。也就是说，<strong>今天腾讯跌，主因在港股内部，不怪美股</strong>。</p>
-    </div>
+    <p><strong>🏦 美联储新主席"首秀"放了狠话：</strong>6/17 议息会议，新主席沃什上任后第一次主持。利率没变（3.5%-3.75%），但态度明显变"鹰"了——就是偏紧、偏狠。点阵图显示 <strong>19 个美联储官员里有 9 个觉得今年该加息</strong>。市场现在押注 7 月加息的概率从 8.5% 飙到 38.5%。<strong>翻译：美联储觉得通胀还没压下去，可能要继续收紧钱包。</strong></p>
+
+    <p><strong>🌍 地缘好消息：</strong>美伊达成谅解备忘录，霍尔木兹海峡重新通了。油价应声下跌（美油 75.5 美元/桶），黄金也跌了 3.5%（COMEX 金价 4227 美元/盎司）。<strong>翻译：打仗的担心少了，避险资金从黄金里撤出来，往股市里冲。</strong></p>
+
+    <p><strong>🔗 对腾讯/A 股的影响：</strong>美联储可能加息 → 美元走强 → 资金可能从新兴市场（包括港股）回流美国。这对腾讯是间接利空。但芯片股大涨说明 AI 赛道热度不减，腾讯在 AI 上也在大投入（Q1 资本开支 319 亿，同比 +16%），长期逻辑没变。</p>
   </div>
 </section>
 
-<!-- Section 5: 小白行动建议 -->
+<!-- ===== 5. 小白行动建议 ===== -->
 <section id="action">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-num">04</div>
-      <div>
-        <div class="section-title">小白行动建议</div>
-        <div class="section-lede">不是买卖指令，是思路参考</div>
-      </div>
+  <div class="section-head">
+    <div class="section-num">05 / ACTION</div>
+    <div>
+      <div class="section-title">🧭 小白行动建议</div>
+      <div class="section-lede">不是买卖指令，只是帮你理清思路</div>
     </div>
+  </div>
 
-    <div class="action-card">
-      <h4>🤔 如果你已经持有腾讯</h4>
-      <p>连跌 5 天确实难受，但记住：跌的原因是"资金一时移情别恋"，不是腾讯利润崩了。如果你是长期拿着的，不用因为这几天的下跌就割肉。但也别盲目加仓——现在下跌劲头还在，等它站稳（重新站上 445）再说。仓位特别重、晚上睡不着的，可以小幅减一点降低焦虑。</p>
-    </div>
+  <div class="action-card">
+    <h4>📦 如果你已经持有腾讯</h4>
+    <p>短期偏弱但不用割肉。公司每天花 5 亿回购是真金白银在托底，420 港元附近有强支撑。如果仓位不重（不超过总资产 30%），可以拿着不动。如果仓位太重，可以考虑在反弹到 450 附近适当减一点。</p>
+  </div>
 
-    <div class="action-card">
-      <h4>👀 如果你还没买、想买</h4>
-      <p>好消息是越跌越便宜了（现在 433.6，比圆桌报告时便宜了近 6%）。但"在下跌中接刀"很危险。建议<strong>别一次性买完</strong>：可以先用很小的钱（比如计划资金的 1/4）试试水，等真正止跌企稳了再分批加。耐心等比着急买更重要。</p>
-    </div>
+  <div class="action-card">
+    <h4>🛒 如果你还没买、想买腾讯</h4>
+    <p>别急。现在 MACD 还是空头排列，南向资金在撤，趋势没企稳。<strong>建议等两个信号至少出现一个再动手</strong>：①股价站上 445 且连续两天守住；②MACD 柱从负转正。不追涨不杀跌，耐心等右侧。</p>
+  </div>
 
-    <div class="action-card">
-      <h4>⚠️ 今天最该警惕的事</h4>
-      <p><strong>南向资金还在持续撤离</strong>。只要内地的钱还在往 AI 芯片股里钻，腾讯、阿里这些老牌互联网股短期就很难有大行情。盯住一个信号：哪天看到南向资金重新净买入腾讯了，才是真正的转机。在那之前，保持耐心、别频繁操作。</p>
-    </div>
+  <div class="action-card">
+    <h4>🇺🇸 如果你关注纳指 ETF</h4>
+    <p>纳指上周五大涨很诱人，但美联储可能加息的"靴子"还没落地（7 月议息会议）。短期追高风险不小。如果长期看好 AI，可以分批定投，不要一把梭。芯片股已经创新高，追涨要格外小心。</p>
+  </div>
+
+  <div class="action-card">
+    <h4>⚠️ 今天最该警惕的事</h4>
+    <p>腾讯离 52 周最低 420.4 港元只剩 16 块了（约 3.6%）。如果本周跌破 420，可能会触发一波止损盘，加速下跌。关注这几天能不能守住 430 这个心理关口。</p>
   </div>
 </section>
 
-<!-- Section 6: 下次重点关注 -->
-<section>
-  <div class="container">
-    <div class="section-head">
-      <div class="section-num">05</div>
-      <div>
-        <div class="section-title">下次重点关注</div>
-        <div class="section-lede">近期会发生的、可能影响市场的事</div>
-      </div>
+<!-- ===== 6. 下次重点关注 ===== -->
+<section id="watch">
+  <div class="section-head">
+    <div class="section-num">06 / WATCH</div>
+    <div>
+      <div class="section-title">👀 下次重点关注</div>
+      <div class="section-lede">本周值得盯的 3 件事</div>
     </div>
+  </div>
 
-    <div class="watch-item">
-      <div class="watch-date">本周</div>
-      <div class="watch-text">🔄 南向资金动向——盯住内地的钱什么时候停止抛腾讯、重新买回来，这是腾讯止跌的最关键信号</div>
-    </div>
-    <div class="watch-item">
-      <div class="watch-date">本周</div>
-      <div class="watch-text">💼 腾讯回购窗口——前几天腾讯一直在用公司的钱买自家股票护盘，留意每天的回购金额有没有加大</div>
-    </div>
-    <div class="watch-item">
-      <div class="watch-date">持续关注</div>
-      <div class="watch-text">🇺🇸 美联储后续表态——本次会议偏"鹰"（想收紧），美债利率走向会影响全球科技股估值</div>
-    </div>
+  <div class="watch-item">
+    <div class="watch-date">本周</div>
+    <div class="watch-text"><strong>腾讯能否守住 430 港元</strong> — 距 52 周最低 420.4 仅一步之遥，守住就有机会企稳反弹，守不住可能加速下跌</div>
+  </div>
+
+  <div class="watch-item">
+    <div class="watch-date">7 月初</div>
+    <div class="watch-text"><strong>美国 6 月非农就业数据 & CPI 数据</strong> — 美联储说可能加息，就看这两个数据。如果通胀还高，7 月加息概率会进一步上升，对全球股市不利</div>
+  </div>
+
+  <div class="watch-item">
+    <div class="watch-date">持续</div>
+    <div class="watch-text"><strong>美伊核谈 60 天窗口期进展</strong> — 谅解备忘录已签，60 天内要谈出结果。顺利 → 油价跌、风险偏好升；生变 → 油价飙、避险情绪来</div>
   </div>
 </section>
 
-<!-- Section 7: 往期日报 -->
-<section>
-  <div class="container">
-    <div class="section-head">
-      <div class="section-num">06</div>
-      <div>
-        <div class="section-title">📅 往期日报</div>
-        <div class="section-lede">历史归档，随时回看</div>
-      </div>
+<!-- ===== 7. 往期日报 ===== -->
+<section id="archive">
+  <div class="section-head">
+    <div class="section-num">07 / ARCHIVE</div>
+    <div>
+      <div class="section-title">📅 往期日报</div>
+      <div class="section-lede">点击查看历史报告</div>
     </div>
-    <div class="archive-grid">
-      <a class="archive-link" href="archive/2026-06-12.html">6月12日</a>
-      <a class="archive-link" href="archive/2026-06-11.html">6月11日</a>
-      <a class="archive-link" href="archive/2026-06-10.html">6月10日</a>
-      <a class="archive-link" href="archive/2026-06-09.html">6月9日（首期）</a>
-      <a class="archive-link" href="roundtable-2026-06-09.html">📄 完整圆桌深度报告</a>
-    </div>
+  </div>
+
+  <div class="archive-grid">
+    <a class="archive-link" href="archive/2026-06-22.html">2026-06-22（今日）</a>
+    <a class="archive-link" href="archive/2026-06-12.html">2026-06-12</a>
+    <a class="archive-link" href="archive/2026-06-11.html">2026-06-11</a>
+    <a class="archive-link" href="archive/2026-06-10.html">2026-06-10</a>
+    <a class="archive-link" href="archive/2026-06-09.html">2026-06-09（圆桌报告）</a>
+    <a class="archive-link" href="roundtable-2026-06-09.html">📜 首期深度圆桌报告</a>
   </div>
 </section>
 
-<!-- Disclaimer -->
-<section>
-  <div class="container">
-    <div class="disclaimer">
-      ⚠️ 以上内容由 AI 基于公开信息整理生成，仅供参考，不构成任何投资建议。投资有风险，决策需谨慎。数据来源：腾讯自选股 westock-data、公开新闻。纳指为 6 月 18 日美股收盘数据（6 月 19 日美国六月节休市）。
-    </div>
+<!-- ===== 免责声明 ===== -->
+<section id="disclaimer" style="padding-bottom: 24px;">
+  <div class="disclaimer">
+    ⚠️ 以上内容由 AI 基于公开信息整理生成，仅供参考，不构成任何投资建议。投资有风险，决策需谨慎。数据来源：westock-data 实时行情、WebSearch 公开新闻。美东 6/19 为 Juneteenth 假日美股休市，纳指数据为 6/18 收盘。
   </div>
 </section>
+
+</div>
 
 <footer>
-  <div class="container">
-    圆汇众 · 腾讯自选股投研专家团 · 白话日报 · 2026-06-22
-  </div>
+  圆汇众 · 腾讯自选股股票投研专家团 · 每日白话日报<br>
+  2026-06-22 · 自动生成
 </footer>
 
 </body>
