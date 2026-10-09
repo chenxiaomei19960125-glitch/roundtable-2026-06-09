@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腾讯 + 纳斯达克 · 今日速报 · 2026-10-09</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #F7F5F3; --bg-secondary: #FFFFFF; --bg-card: #FFFFFF;
+  --bg-elevated: #FAFAF9; --bg-warm: #F5F2EE; --bg-dark: #2D2926;
+  --text-primary: #2D2926; --text-secondary: #5C5652;
+  --text-muted: #8A8480; --text-light: #A8A29E;
+  --accent: #D97706; --accent-light: #FEF3C7; --accent-hover: #B45309;
+  --border: #E5E2DE; --border-light: #F0EEEC;
+  --red: #DC2626; --green: #059669; --gold: #D97706; --blue: #2563EB;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', Georgia, serif;
+  background: var(--bg-primary); color: var(--text-primary);
+  line-height: 1.8; font-size: 16px; -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: inherit; font-weight: 600; letter-spacing: 0.02em; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); }
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+section { padding: 48px 0; }
+
+nav { position: sticky; top: 0; z-index: 100; height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; background: rgba(247,245,243,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-light); }
+.nav-logo { font-weight: 600; font-size: 0.95rem; }
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: var(--text-secondary); font-size: 0.85rem; }
+
+.hero { max-width: 900px; margin: 0 auto; padding: 72px 24px 36px; }
+.kicker { color: var(--accent); font-size: 0.85rem; letter-spacing: 0.15em; font-weight: 500; margin-bottom: 20px; }
+.hero h1 { font-size: 2.2rem; line-height: 1.3; margin-bottom: 16px; }
+.hero-dek { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px; }
+.host { display: inline-flex; align-items: center; gap: 10px; font-size: 0.9rem; color: var(--text-muted); }
+
+.conclusion-card {
+  padding: 32px 36px; background: var(--bg-card); border: 1px solid var(--border);
+  border-left: 5px solid var(--accent); border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(217,119,6,0.06);
+}
+.conclusion-emoji { font-size: 2rem; margin-bottom: 12px; }
+.conclusion-text { font-size: 1.2rem; font-weight: 600; line-height: 1.7; margin-bottom: 8px; }
+.conclusion-sub { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; }
+
+.data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.data-card {
+  background: var(--bg-card); border: 1px solid var(--border-light);
+  border-radius: 14px; padding: 24px 20px; text-align: center; transition: box-shadow 0.2s;
+}
+.data-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.data-label { font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.08em; margin-bottom: 8px; }
+.data-value { font-size: 1.6rem; font-weight: 700; }
+.data-change { font-size: 0.9rem; margin-top: 6px; }
+.data-note { font-size: 0.78rem; color: var(--text-light); margin-top: 4px; }
+
+.red { color: var(--red); }
+.green { color: var(--green); }
+
+.section-head { display: grid; grid-template-columns: 100px 1fr; gap: 20px; align-items: baseline; margin-bottom: 32px; }
+.section-num { font-size: 0.85rem; color: var(--accent); letter-spacing: 0.12em; border-top: 1px solid var(--accent); padding-top: 6px; }
+.section-title { font-size: 1.6rem; }
+.section-lede { color: var(--text-muted); margin-top: 4px; font-size: 0.9rem; }
+
+.prose p { font-size: 1.02rem; line-height: 1.9; margin-bottom: 16px; color: var(--text-primary); }
+.prose strong { color: var(--accent); font-weight: 600; }
+
+.action-card { background: var(--bg-warm); border-radius: 14px; padding: 24px 28px; margin-bottom: 16px; border: 1px solid var(--border-light); }
+.action-card h4 { font-size: 1rem; margin-bottom: 8px; }
+.action-card p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; }
+
+.watch-item { display: flex; align-items: center; gap: 16px; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; margin-bottom: 12px; }
+.watch-date { font-size: 0.85rem; color: var(--accent); font-weight: 600; min-width: 90px; }
+.watch-text { font-size: 0.95rem; color: var(--text-secondary); }
+
+.archive-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+.archive-link { padding: 8px 16px; background: var(--bg-elevated); border: 1px solid var(--border-light); border-radius: 8px; font-size: 0.88rem; color: var(--text-secondary); transition: all 0.2s; }
+.archive-link:hover { color: var(--accent); border-color: var(--accent); }
+
+.disclaimer { padding: 24px; background: var(--bg-elevated); border-radius: 12px; font-size: 0.82rem; color: var(--text-muted); line-height: 1.7; border: 1px solid var(--border-light); }
+
+footer { padding: 32px 0; text-align: center; font-size: 0.82rem; color: var(--text-light); border-top: 1px solid var(--border-light); }
+
+.warning-highlight { background: #FEF2F2; border-left: 4px solid var(--red); padding: 16px 20px; border-radius: 10px; margin: 16px 0; }
+.warning-highlight p { margin: 0; font-size: 0.95rem; color: #991B1B; }
+.warning-highlight strong { color: #DC2626; }
+
+.good-highlight { background: #ECFDF5; border-left: 4px solid var(--green); padding: 16px 20px; border-radius: 10px; margin: 16px 0; }
+.good-highlight p { margin: 0; font-size: 0.95rem; color: #065F46; }
+
+.risk-matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+.risk-card { padding: 18px 20px; border-radius: 12px; border: 1px solid var(--border-light); }
+.risk-card.good { background: #ECFDF5; border-color: #A7F3D0; }
+.risk-card.bad { background: #FEF2F2; border-color: #FECACA; }
+.risk-card h5 { font-size: 0.9rem; margin-bottom: 6px; }
+.risk-card p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.6; }
+
+@media (max-width: 680px) {
+  .data-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 1.6rem; }
+  .section-head { grid-template-columns: 1fr; }
+  .section-num { border-top: none; border-left: 2px solid var(--accent); padding-left: 12px; padding-top: 0; }
+  .risk-matrix { grid-template-columns: 1fr; }
+}
+</style>
+
+<body>
+
+<nav>
+  <div class="nav-logo">📊 圆汇众 · 白话日报</div>
+  <div class="nav-links">
+    <a href="#conclusion">结论</a>
+    <a href="#tencent">腾讯</a>
+    <a href="#nasdaq">纳指</a>
+    <a href="#action">建议</a>
+    <a href="#archive">往期</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="kicker">2026-10-09 · 周五 · 第43期</div>
+  <h1>📊 腾讯 + 纳斯达克 · 今日速报 · 2026-10-09</h1>
+  <p class="hero-dek">先补上这段时间的进度：国庆假期里（10/2）港股大跌过一轮，昨天（10/8）又跌到 <strong>411.4 港元，离一年来的最低点只差 2 毛钱</strong>。<strong>今天（10/9）腾讯终于反弹了，涨 2.14% 回到 420.2 港元</strong>。纳指那边昨晚（美东 10/8）<strong>跌了 1.25%、收 27,193 点</strong>，原因是<strong>"AI 公司赚钱没想象中快"这条消息吓到了市场</strong>。<strong>对小白说：今天可以稍微松一口气（😐 偏谨慎），腾讯是"跌到地板上被人接住了"，但接住≠要涨，真正的大考在下周三（10/14）美国物价数据。</strong></p>
+  <div class="host">🤝 主理人：圆汇众 · 数据截至 2026-10-09 港股盘中 & 美东 10/8 收盘</div>
+</div>
+
+<div class="container">
+
+<!-- ===== 1. 一句话结论 ===== -->
+<section id="conclusion" style="padding-top: 0;">
+  <div class="conclusion-card">
+    <div class="conclusion-emoji">😐</div>
+    <div class="conclusion-text">
+      腾讯今天 <strong>涨 2.14%、报 420.2 港元</strong>（昨天刚跌到 411.4，离一年最低点只差 2 毛钱）；纳指昨晚 <strong>跌 1.25%、收 27,193 点</strong>。今天这波是"<strong>跌到地板上、有人接住了</strong>"——港股整体反弹（恒指 +1.30%），腾讯跟着回了一口气。但别高兴太早：<strong>接住不等于要涨</strong>，下周三（10/14）美国要公布 9 月物价数据，那才是决定下一步方向的关键。今天是 😐（松口气但不乐观）。
+    </div>
+    <div class="conclusion-sub">
+      为什么这么说？<strong>先看腾讯。</strong>昨天（10/8）它一天跌了 2.19%，收在 411.4 港元，盘中最低摸到 411.2 —— <strong>而它一年来的最低点就是 411，也就是说只差 2 毛钱就破纪录了</strong>。那天成交了 125.57 亿港元，是平时的三倍多，属于"<strong>放量砸盘</strong>"（卖的人特别多、卖得很急）。<strong>今天（10/9）风向变了</strong>：开盘 415，一路涨到 420.2，涨了 8.8 港元（+2.14%），成交也还算活跃。同时港股大盘也在涨（恒指 +1.30%、恒生科技 +1.84%），说明<strong>不是腾讯一家在涨，是整个港股情绪回暖</strong>。<strong>再看纳指。</strong>昨晚（美东 10/8）纳斯达克跌了 345 点、跌幅 1.25%。这次跌得很"整齐"——<strong>芯片股带头崩</strong>（费城半导体指数 -3.39%，英特尔 -5.34%、AMD -3.90%、美光和 SK 海力士都跌超 4%），<strong>英伟达跌 2.94%</strong>，连甲骨文都跌了 5.48%。原因是一则消息：<strong>OpenAI 告诉投资人，它现在的年收入规模大约 500 亿美元，比之前给大家暗示的 700 亿少了 200 亿</strong>。市场一听就慌了——"AI 公司赚钱没那么快，那它们还买不买那么多芯片、建不建那么多数据中心？"加上<strong>油价一天涨了 4%</strong>（布伦特原油 104.28 美元），大家又担心物价重新涨起来、美国央行继续加息。<strong>所以整体判断：腾讯今天是"喘气"，纳指那边是"AI 故事被泼了冷水"，两边都还没到下定论的时候。</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. 关键数据卡片 ===== -->
+<section id="data" style="padding-top: 24px;">
+  <div class="section-head">
+    <div class="section-num">DATA</div>
+    <div>
+      <h2 class="section-title">关键数据一览</h2>
+      <p class="section-lede">用最直观的数字告诉你今天发生了什么</p>
+    </div>
+  </div>
+
+  <div class="data-grid">
+    <div class="data-card">
+      <div class="data-label">🐧 腾讯控股</div>
+      <div class="data-value red">420.2 <span style="font-size:0.7em;font-weight:400;">港元</span></div>
+      <div class="data-change red">+8.8 港元（+2.14%）</div>
+      <div class="data-note">盘中 · 昨收 411.4 · 量比 1.83</div>
+    </div>
+    <div class="data-card">
+      <div class="data-label">📏 距圆桌参考价</div>
+      <div class="data-value green">-8.81%</div>
+      <div class="data-change green">460.8 还差约 40.6 港元</div>
+      <div class="data-note">52 周低 411（昨天差 0.2 港元触及）</div>
+    </div>
+    <div class="data-card">
+      <div class="data-label">🇺🇸 纳斯达克</div>
+      <div class="data-value green">27,193</div>
+      <div class="data-change green">-345 点（-1.25%）</div>
+      <div class="data-note">美东 10/8 收盘 · 费半 -3.39%</div>
+    </div>
+    <div class="data-card">
+      <div class="data-label">💰 美债 10 年收益率</div>
+      <div class="data-value">≈5.23%</div>
+      <div class="data-change green">盘中一度冲到 5.35%</div>
+      <div class="data-note">美国"借钱十年的利息"· 越高科技股越难受</div>
+    </div>
+    <div class="data-card">
+      <div class="data-label">🧭 资金面</div>
+      <div class="data-value">公司天天回购</div>
+      <div class="data-change red">今年已买 314.41 亿港元</div>
+      <div class="data-note">自 8/17 起连买 33 个交易日</div>
+    </div>
+    <div class="data-card">
+      <div class="data-label">📋 今日热点</div>
+      <div class="data-value" style="font-size:1.15rem;">AI 赚钱没想象快</div>
+      <div class="data-change green">OpenAI 年收入比预期少 200 亿</div>
+      <div class="data-note">美元 · 芯片股集体挨锤</div>
+    </div>
+  </div>
+
+  <div class="risk-matrix" style="margin-top: 24px;">
+    <div class="risk-card good">
+      <h5>✅ 好的信号</h5>
+      <p>腾讯今天放量反弹、成交 31.78 亿港元（量比 1.83），有人在低位接 · 港股大盘一起涨（恒指 +1.30%、恒生科技 +1.84%），不是孤军奋战 · 公司自己天天回购，自 8 月 17 日起连续 33 个交易日、每天约 1 亿港元在买自己的股票，今年以来累计 314.41 亿港元 · 市盈率 14.09 倍，仍是历史便宜区间 · 昨天南向资金（内地通过港股通买港股的钱）净买港股 64.77 亿、其中腾讯拿了 24.52 亿 · 美国上周首次申请失业金人数 19.7 万人，比预期少，就业还稳</p>
+    </div>
+    <div class="risk-card bad">
+      <h5>⚠️ 要警惕的信号</h5>
+      <p>昨天腾讯盘中最低 411.2，离一年最低点 411 只差 2 毛钱，属于"贴着地板走" · 昨天成交 125.57 亿港元是平时的三倍多，说明当时抛压很重 · 美债 10 年收益率盘中冲到 5.35%（收在约 5.23%），是 2007 年以来少见的高位，借钱成本高会压着科技股估值 · 美联储官员沃勒说"还需要继续加息"，另一位穆萨勒姆说"未来 6—9 个月利率还得往上走" · 油价一天涨 4%（布油 104.28 美元），物价可能重新抬头 · 腾讯技术图形仍是下跌趋势，没有转好迹象</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. 腾讯今天发生了什么 ===== -->
+<section id="tencent">
+  <div class="section-head">
+    <div class="section-num">01</div>
+    <div>
+      <h2 class="section-title">腾讯今天发生了什么</h2>
+      <p class="section-lede">从"贴着地板"到"被人接住"</p>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p><strong>先说结论：今天是反弹，不是翻身。</strong></p>
+
+    <p><strong>价格怎么走的。</strong>昨天（10/8）腾讯高开 422，结果一路往下掉，最低摸到 <strong>411.2 港元</strong>，最后收在 411.4，跌了 2.19%。这一天成交额 125.57 亿港元，是最近两周平均的三倍多——用大白话说就是"<strong>很多人急着卖，卖得很凶</strong>"。而 411 这个数字很关键，因为<strong>它过去一年就只有 411 这个最低点，昨天差 2 毛钱就破纪录了</strong>。今天（10/9）开盘 415，随后一路往上走到 421.4，现在报 420.2，涨了 2.14%。截至现在成交 31.78 亿港元，量比 1.83（意思是比最近同时段的平均成交活跃不少）。</p>
+
+    <p><strong>钱是进来还是跑了。</strong>这里要分两拨看。第一拨是<strong>公司自己</strong>：腾讯从 8 月 17 日开始，<strong>连续 33 个交易日、每天掏大约 1 亿港元买回自己的股票然后注销</strong>，累计已经回购 1,201.5 万股、花了 53.12 亿港元（截至 9/30）；今年以来一共回购 86 次、累计 314.41 亿港元。公司肯在低位持续掏钱，算是给股价垫了一层。第二拨是<strong>内地资金</strong>：昨天南向资金（就是内地投资者通过港股通买港股的钱）全天净买入港股 64.77 亿港元，其中<strong>腾讯一只就拿到了 24.52 亿的净加仓</strong>，是当天被加仓最多的之一。不过要提醒一句，<strong>今天盘中的南向数据显示腾讯是小幅净卖出（各家口径在 4 亿左右打架），这个数字现在还不确定，别拿它当结论</strong>。</p>
+
+    <p><strong>关键价位提醒（记这三个数就够了）。</strong>圆桌报告给的参考价是 <strong>460.8 港元</strong>，现在 420.2，<strong>还差 8.81%，也就是约 40.6 港元</strong>——离"回到正常状态"还有很长的路。<strong>往上看</strong>：第一步要先站回 430 一带（10 月初几次都没站住），站稳了才能谈 450，再往上才是 460.8。<strong>往下看</strong>：411 是生死线，<strong>如果哪天收盘真的跌破 411，那就是创了一年新低，往往还会再往下探一段，那时候要格外警惕</strong>。现在的位置是"跌到地板上刚被接住"，属于<strong>可以观察、但不适合激动</strong>的位置。</p>
+
+    <p><strong>最后说一句为什么腾讯今年这么弱。</strong>不是它生意变差了——二季度游戏收入 659 亿（+11%）、广告 436 亿（+22%），都在增长。真正压制股价的是<strong>它在 AI 上花钱太猛</strong>：二季度资本开支 528 亿元，导致<strong>自由现金流转成了负数（-138 亿元）</strong>，管理层也说过"可能要适当减少回购"。市场现在的态度很直白：<strong>你赚钱能力没问题，但你把钱都投出去了、股东暂时拿不到现金，那就先给你打个折。</strong>所以这一轮下跌，本质是"市场在等 AI 的投入变回现金"。</p>
+  </div>
+</section>
+
+<!-- ===== 4. 纳斯达克今天发生了什么 ===== -->
+<section id="nasdaq">
+  <div class="section-head">
+    <div class="section-num">02</div>
+    <div>
+      <h2 class="section-title">纳斯达克今天发生了什么</h2>
+      <p class="section-lede">AI 故事被泼了一盆冷水</p>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p><strong>先说结论：昨晚美股是被"AI 赚钱没想象中快"这条消息砸下来的，不是经济出问题。</strong></p>
+
+    <p><strong>昨天（美东 10/8）收盘情况。</strong>纳斯达克跌 <strong>345 点、跌幅 1.25%，收 27,193.34 点</strong>；标普 500 跌 0.47%，收 7,765.36；道指反而小涨 0.10%，收 51,231.64。看这个组合就明白了：<strong>涨的是能源股和日常消费这类"稳当股"，跌的全是科技股</strong>。个股上，英伟达 -2.94%、亚马逊 -2.25%、微软 -1.35%、甲骨文 -5.48%、SpaceX -4.19%，芯片更惨——<strong>费城半导体指数跌 3.39%</strong>，英特尔 -5.34%、AMD -3.90%、美光和 SK 海力士跌超 4%。唯一的亮点是苹果 +1.11%（大家期待它 10 月 13 日的发布会）。</p>
+
+    <p><strong>导火索是什么。</strong>多家媒体报道，<strong>OpenAI 向投资人披露：截至 9 月底，它一年的收入规模大约 500 亿美元，比之前市场以为的 700 亿少了约 200 亿</strong>。这件事本身不算暴雷（主要是统计口径差异，不是收入突然掉了），但市场的反应很真实——<strong>"如果 AI 应用公司赚钱没那么快，那它们以后还买不买那么多芯片？还建不建那么多数据中心？"</strong>过去一年芯片股涨太多（今年累计涨超 80%），本来就有点"贵得离谱"，这下正好给了大家一个卖出的理由。</p>
+
+    <p><strong>还有两件事在添乱。</strong>一是<strong>油价大涨</strong>：霍尔木兹海峡接连发生船运遇袭，加上飓风影响美国产量，WTI 原油涨 3.64% 到 91.49 美元、布伦特涨 4.07% 到 104.28 美元。油价一涨，大家就担心物价重新抬头，加息预期跟着升温。二是<strong>美联储官员放鹰</strong>：理事沃勒说"为了压住通胀，未来可能仍需进一步加息，但不必每次会议都加"；圣路易斯联储总裁穆萨勒姆说"利率可能需要在未来 6—9 个月继续上调"。与之呼应，<strong>美国 10 年期国债收益率盘中一度冲到 5.35%、收在约 5.23%</strong>，30 年期约 5.60%——这是 2007 年以来少见的高位。<strong>用大白话说：美国借钱的成本现在是近二十年最贵的一档，钱贵了，高估值的科技股就最难受。</strong></p>
+
+    <p><strong>对腾讯和 A 股有什么连带影响。</strong>三条传导路径，你记住就行：<strong>第一，情绪传导</strong>——美股芯片股大跌，第二天港股、A 股的半导体和 AI 概念股通常会跟着低开（今天 A 股科创综指跌 4.55%、光芯片板块大跌，就是这个逻辑）。<strong>第二，利率传导</strong>——美债收益率越高，全球资金越倾向于把钱放回美元资产，从新兴市场（包括港股）流出的压力就越大，这是今年腾讯一直被压着的大背景。<strong>第三，业务传导</strong>——如果美国 AI 大厂真的开始减少算力采购，那对全球芯片链是坏消息，但对腾讯这种"用 AI 提升自己业务"的公司反而不算直接利空，它主要的压力还是来自高利率环境。所以<strong>今晚美股的情绪，明天（10/10）港股开盘会照单接收一部分，心里有个数就行。</strong></p>
+  </div>
+</section>
+
+<!-- ===== 5. 小白行动建议 ===== -->
+<section id="action">
+  <div class="section-head">
+    <div class="section-num">03</div>
+    <div>
+      <h2 class="section-title">小白行动建议</h2>
+      <p class="section-lede">不是买卖指令，只是帮你把思路理清楚</p>
+    </div>
+  </div>
+
+  <div class="action-card">
+    <h4>🙋 已经持有腾讯的人：稳住，别在地板上加杠杆</h4>
+    <p>今天反弹是好事，但<strong>反弹一天不能说明趋势反转</strong>。你现在最该做的不是补仓也不是割肉，而是<strong>把 411 这个数字记下来</strong>：只要收盘不跌破它，就继续拿着观察；真跌破了，再认真考虑要不要减一些。另外提醒一句，<strong>公司自己每天都在买（连续 33 个交易日了），这至少说明管理层认为现在这个价格不贵</strong>，你不比公司更慌就行。</p>
+  </div>
+
+  <div class="action-card">
+    <h4>🤔 想买的人：等一个更明确的信号，别急着抄底</h4>
+    <p>现在 420.2 看着比年初 590 便宜太多，但"<strong>便宜</strong>"和"<strong>要涨</strong>"是两回事。建议等两个信号中的一个出现再动手：<strong>① 下周三（10/14）美国物价数据出来后，如果通胀没超预期、美债收益率明显回落</strong>；或者 <strong>② 腾讯连续两三天站稳 430 以上，且成交持续放大</strong>。这两个都没出现之前，小额定投可以，重仓抄底不建议。</p>
+  </div>
+
+  <div class="action-card">
+    <h4>🚨 今天最该警惕的三件事</h4>
+    <p><strong>第一，别把"一天反弹"当成"底部确认"。</strong>腾讯技术图形现在还是下跌趋势，昨天刚贴着一年最低点走过。<br>
+    <strong>第二，紧盯下周三（10/14）美国 9 月 CPI。</strong>这是决定 10 月底美联储要不要再加息的关键数据，一旦超预期，美债收益率可能再冲 5.35% 以上，科技股和港股都会难受。<br>
+    <strong>第三，油价别忽视。</strong>布油已经 104 美元，霍尔木兹海峡的袭击还在发生，油价继续涨 = 通胀继续顽固 = 加息预期更浓 = 科技股继续承压，这条链条今年已经演过好几次了。</p>
+  </div>
+
+  <div class="warning-highlight">
+    <p><strong>⚠️ 一句话提醒：</strong>现在是"加息周期 + AI 故事被质疑"双重夹击的环境，不是单边上涨的市场。<strong>任何让你"赶紧上车、马上要涨"的说法，都要打个问号。</strong></p>
+  </div>
+</section>
+
+<!-- ===== 6. 下次重点关注 ===== -->
+<section id="watch">
+  <div class="section-head">
+    <div class="section-num">04</div>
+    <div>
+      <h2 class="section-title">接下来重点关注</h2>
+      <p class="section-lede">未来一周到两周，这几个日子值得圈出来</p>
+    </div>
+  </div>
+
+  <div class="watch-item">
+    <div class="watch-date">10/14 周三</div>
+    <div class="watch-text"><strong>美国 9 月 CPI（物价数据，北京时间 20:30）——本周最重要。</strong>市场预期核心 CPI 同比 3.4%—3.5%。如果高于预期，加息预期升温，美债收益率还会往上冲，港股科技股跟着难受；如果明显低于预期，全球科技股都能松一口气。</div>
+  </div>
+  <div class="watch-item">
+    <div class="watch-date">10/13 周二</div>
+    <div class="watch-text"><strong>苹果秋季发布会 + 摩根大通 Q3 财报</strong>——美股三季度财报季正式开锣。苹果发布会给不给惊喜，会直接影响全球消费电子和 AI 手机这条线的情绪。</div>
+  </div>
+  <div class="watch-item">
+    <div class="watch-date">10/15 周四</div>
+    <div class="watch-text"><strong>美国 9 月 PPI + 9 月零售销售</strong>——CPI 的"补充验证"。同一天中国也会公布 9 月 CPI/PPI，看国内物价有没有起色。</div>
+  </div>
+  <div class="watch-item">
+    <div class="watch-date">10/19 周一</div>
+    <div class="watch-text"><strong>中国三季度 GDP + 9 月经济数据</strong>——工业、消费、投资、房地产一次看全，是判断港股中资股基本面的关键窗口。</div>
+  </div>
+  <div class="watch-item">
+    <div class="watch-date">10/29 凌晨</div>
+    <div class="watch-text"><strong>美联储 10 月议息结果（北京时间约 29 日凌晨）</strong>——9 月已经加过一次（利率 3.75%—4.00%），不少机构预测 10 月和 12 月还会各加一次。这是未来一个月最大的悬念。</div>
+  </div>
+</section>
+
+<!-- ===== 7. 往期日报 ===== -->
+<section id="archive">
+  <div class="section-head">
+    <div class="section-num">05</div>
+    <div>
+      <h2 class="section-title">往期日报</h2>
+      <p class="section-lede">历史归档永久保留，可随时回看</p>
+    </div>
+  </div>
+  <div class="archive-grid">
+    <a class="archive-link" href="archive/2026-09-21.html">2026-09-21</a>
+    <a class="archive-link" href="archive/2026-09-07.html">2026-09-07</a>
+    <a class="archive-link" href="archive/2026-09-04.html">2026-09-04</a>
+    <a class="archive-link" href="archive/2026-09-03.html">2026-09-03</a>
+    <a class="archive-link" href="archive/2026-09-02.html">2026-09-02</a>
+    <a class="archive-link" href="archive/2026-09-01.html">2026-09-01</a>
+    <a class="archive-link" href="archive/2026-08-31.html">2026-08-31</a>
+    <a class="archive-link" href="roundtable-2026-06-09.html" style="border-color: var(--accent); color: var(--accent);">📘 首期深度圆桌报告（2026-06-09）</a>
+  </div>
+</section>
+
+<!-- ===== 8. 页脚 ===== -->
+<section style="padding-top: 24px;">
+  <div class="disclaimer">
+    ⚠️ 以上内容由 AI 基于公开信息整理生成，仅供参考，不构成任何投资建议。投资有风险，决策需谨慎。
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="container">
+    <p>📊 腾讯 + 纳斯达克 · 白话日报 · 2026-10-09 · 主理人：圆汇众</p>
+    <p style="margin-top: 6px;">数据来源：腾讯自选股行情接口 + 公开财经资讯整理</p>
+  </div>
+</footer>
+
+</body>
+</html>
